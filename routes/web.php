@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/','IndexController@index');
+
+Route::get('/upload',function() {
+    return view('upload');
 });
+
+Route::post('/upload/completeUpload','UploadController@completeUpload');
+
+Route::get('/download/{id}','DownloadController@download');
