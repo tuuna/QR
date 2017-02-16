@@ -8,8 +8,9 @@ class DownloadController extends Controller
 {
     public function download($id)
     {
-        $file = storage_path('app/uploads/' . Upload::find($id)->file_name);
+        $file_name = Upload::find($id)->file_name;
+        $file = storage_path('app/uploads/' . $file_name);
 
-        return Response::download($file, '自定义文件名');
+        return Response::download($file, $file_name);
     }
 }
