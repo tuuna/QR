@@ -28,6 +28,8 @@ $ php artisan migrate
 ##### 测试
 ```
 $ php artisan serve --host=your_ip --port=8080
+或者
+$ php artisan serve --host=0.0.0.0 --port=8080
 ```
 **Have Fun!**
         
