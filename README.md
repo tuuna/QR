@@ -18,6 +18,12 @@
 $ git clone https://github.com/vampirebitter/QR.git
 ```
 
+- composer components
+
+```
+$ composer install
+```
+
 - 把`.env.example`中的数据库，数据库用户名以及密码修改成自己本地的，然后删除`.env`并把`.env.example`更名为`.env`
 
 - 迁移数据表
